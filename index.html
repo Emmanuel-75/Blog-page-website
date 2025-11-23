@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#home">Skip to main content</a>
     <header>
-        <nav>
-            <div>0xManolis</div>
+        <nav aria-label="Primary">
+            <h1 class="site-title">0xManolis</h1>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-me">About</a></li>
@@ -26,8 +27,8 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="home" id="home">
+    <main id="main-content">
+        <section class="home" id="home" tabindex="-1">
             <h1>Hi, Welcome to My Blog</h1>
             <p>
                 This page was created to serve as an inventory of my past posts.
@@ -56,7 +57,7 @@
         </section>
         <section class="about" id="about-me">
             <div id="image-box">
-                <img src="/week-3-formValidation,metaTags,SEO/OsewaEmmanuel.jpg" alt="Osewa Emmmanuel's picture">
+                <img src="/week-3-formValidation,metaTags,SEO/A demo blog page/OsewaEmmanuel.jpg" alt="Osewa Emmmanuel's picture">
             </div> 
             <div class="my-info">
                 <h2>About Me</h2>
@@ -82,7 +83,7 @@
                 built the structure or focus to make it happen.
                 </p>
                 <p>
-                So, I'm starting over. This time, I'm doing it with intention. <span class="read-more">...read more</span>
+                So, I'm starting over. This time, I'm doing it with intention. <button class="read-more">...read more</button>
                 </p>
                 <p class="More-details">
                 Starting this week, I'll be posting a Weekly Progress Report every Saturday 📅 .
@@ -100,7 +101,7 @@
                 </p>
                 <p class="More-details">
                 #FrontendDevelopment #Consistency #LearningInPublic
-                #Discipline #TechJourney #Accountability <span class="read-less">...read less</span>
+                #Discipline #TechJourney #Accountability <button class="read-less">...read less</button>
                 </p>
             </article>
             <article class="blogs-post">
@@ -114,7 +115,7 @@
                 This week, I didn’t write a single line of code. Instead, I went back to the
                 roots — learning how the web itself works. <br>
                 <br>
-                Here’s what I covered 👇<span class="read-more">...read more</span>
+                Here’s what I covered 👇<button class="read-more">...read more</button>
                 </p>
                 <p class="More-details">
                 1️⃣ Core Web Concepts — Revisited clients, servers, TCP/IP, DNS, and HTTP — and
@@ -155,7 +156,7 @@
                 </p>
                 <p class="More-details">
                 #LearningInPublic #WebDevelopment #Consistency
-                #GrowthMindset #LearningJourney #Accessibility <span class="read-less">...read less</span>
+                #GrowthMindset #LearningJourney #Accessibility <button class="read-less">...read less</button>
                 </p>
             </article>
             <article class="blogs-post">
@@ -166,7 +167,7 @@
                 I shifted gears to HTML5 semantics and accessibility — the backbone of every
                 solid website.
                 <br>
-                Here’s what I worked on 👇 <span class="read-more">...read more</span>
+                Here’s what I worked on 👇 <button class="read-more">...read more</button>
                 </p>
                 <p class="More-details">
                 1️⃣ HTML5 Semantic Elements — Studied the purpose of tags like &lt;header&gt;,
@@ -200,8 +201,8 @@
                 ⏩Moving into forms, validation, meta tags, and SEO — bridging structure with
                 interactivity and visibility.
                 <br>
-                #LearningInPublic #WebDevelopment #Accessibility #FrontEndDevelopment <span
-                class="read-less">...read less</span>
+                #LearningInPublic #WebDevelopment #Accessibility #FrontEndDevelopment <button
+                class="read-less">...read less</button>
                 </p>
             </article>
             <article class="blogs-post">
@@ -214,7 +215,7 @@
                 doesn’t just have to work, it has to communicate clearly with both humans and
                 algorithms.
                 <br>
-                Here’s what I covered <span class="read-more">...read more</span>
+                Here’s what I covered <button class="read-more">...read more</button>
                 </p>
                 <p class="More-details">
                 1️⃣ Form Validation: Learned that HTML5 gives you built-in validation, but real
@@ -247,7 +248,7 @@
                  I’ll be combining everything I’ve learned form validation, accessibility, and
                  SEO into one clean demo page to test how all three connect in real-world
                  development. <br>
-                #SEO #WebDevelopment #BuildingInPublic #LearningJourney #FrontendDev <span class="read-less">...read less</span>
+                #SEO #WebDevelopment #BuildingInPublic #LearningJourney #FrontendDev <button class="read-less">...read less</button>
                 </p>
             </article>
         </section>
@@ -291,10 +292,12 @@
                     <small></small>
                 </fieldset>
                 <fieldset>
-                    <label for="picture">You are to read the FAQ section to be
-                    sure you're not repeating a question that has been answered.
-                    Upload a screenshot of the opened FAQ section to prove that
-                    you've read the FAQ section</label>
+                    <label for="picture">
+                        Before feedback can be taken, you must be a follower
+                        because this means you have seen so many of my posts and
+                        have realized a chance for improvement so upload a
+                        screenshot of you following me
+                    </label>
                     <input type="file" accept=".jpg, .png" id="picture" name="read-FAQ" required>
                     <small></small>
                     <label for="description">Write a bit about your reason for contacting</label>
